@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+    height: 290px;
+    position: relative;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+}
+
+#one {
+    float: left;
+    width: 290px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-right: 20px;
+}
+
+#two {
+    float: left;
+    width: 290px;
+    margin-top: 50px;
+    margin-bottom: 70px; 
+    margin-left: 25px;
+    margin-right: 25px; 
+    
+}
+
+#three {
+    float: left;
+    width: 290px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-right: 20px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text {
+    text-align: center;
+    color: #9d9d9d;
+    font-size: 14px;
+}
+
+.circle{
+    width: 65px;
+    height: 65px;
+    border: 2px solid #2a69a6;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;   
+}
+
+.icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.circle:hover {
+    background-color: #2a69a6;
+}
+
+.icon.cogwhell{
+    background-image: url('./images/wheel_blue.png');
+}
+
+.circle:hover .icon.cogwhell{
+    background-image: url('./images/wheel_white.jpg');
+}
+
+.icon.tablet{
+    background-image: url('./images/tablet_blue.png');
+}
+
+.circle:hover .icon.tablet {
+    background-image: url('./images/tablet_white.png');
+}
+
+.icon.speed {
+    background-image: url('./images/speed_blue.png');
+}
+
+.circle:hover .icon.speed {
+    background-image: url('./images/speed_white.png');
+}

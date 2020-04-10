@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway';
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url("../font/Raleway-Bold.woff")
+}
+
+.page {
+    background-color: #70bfff;
+    padding-top: 179px;
+    padding-bottom: 151px;
+}
+
+.block {
+    position: relative;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 115px;
+    padding-right: 15px;
+}
+
+.about-services {
+    width: 400px;
+    margin-right: 100px;
+}
+
+.about-services__title {
+    width: 570px;
+    text-align: center;
+    background: url("../images/tomato.png") no-repeat;
+    background-position: 50px, 35px;
+    background-size: contain;
+}
+
+.about-services__title h1 {
+    font-size: 90px;
+    line-height: 27px;
+    color: #fff;
+    margin-top: 151px;
+}
+
+.services {
+    list-style-type: none;
+}
+
+.services li {
+    width: 400px;
+    height: 101px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 21px;
+    font-size: 20px;
+    line-height: 27px;
+    color: #262626;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .5);
+}
+
+.services li:nth-child(odd):hover {
+    transform: translateX(-10px);
+    transition: all .5s ease;
+}
+
+.services li:nth-child(even):hover {
+    transform: translateX(10px);
+    transition: all .5s ease;
+}
+
+li:before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #9d9d9d;
+    left: -20px;
+    transform: translateX(311px);
+}
+
+i {
+    transform: translateX(-20px);
+    font-size: 50px;
+}

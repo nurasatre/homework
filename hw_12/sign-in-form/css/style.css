@@ -1,0 +1,186 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+        .container {
+            background: url("../images/bg-image.png") top no-repeat;
+            max-width: 402px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        
+        .wrapper {
+            width: 262px;
+            margin: 0 auto;
+            padding-top: 53px;
+            padding-bottom: 53px;
+        }
+        
+        .button {
+            margin-bottom: 50px;
+        }
+        
+        .button .sign,
+        .button .join {
+            color: #e1c2f1;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            position: relative;
+        }
+        
+        .button .sign::before,
+        .button .join::before {
+            content: '';
+            display: inline-block;
+            width: 100%;
+            height: 3px;
+            background: transparent;
+            position: absolute;
+            left: 0;
+            top: 27px;
+        }
+        
+        .button .sign:hover:before,
+        .button .join:hover:before {
+            color: #fff;
+            background-color: #e66a64;
+            transition: all 1s ease;
+        }
+        
+        .sign {
+            margin-right: 26px;
+        }
+        
+        label {
+            color: #fbf6e4;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        input[type="text"] {
+            margin-bottom: 20px;
+            width: 262px;
+            height: 42px;
+            background-color: transparent;
+            border: none;
+            border: 2px solid #9f87c9;
+            margin-top: 12px;
+            font-size: 18px;
+            color: #fff;
+            padding: 8px;
+        }
+        
+        input[type="password"] {
+            margin-bottom: 20px;
+            width: 262px;
+            height: 42px;
+            background-color: transparent;
+            border: none;
+            border: 2px solid #9f87c9;
+            margin-top: 12px;
+            font-size: 18px;
+            color: #fff;
+            padding: 8px;
+        }
+        
+        input[type='password'].styler:focus,
+        input[type='text'].styler:focus {
+            border-color: #CCC;
+            border-top-color: #B3B3B3;
+            outline: none;
+            background-color: #8753c8;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+        }
+        
+        button[type="submit"] {
+            display: block;
+            margin-bottom: 33px;
+            width: 261px;
+            height: 43px;
+            background-color: #23ae92;
+            color: #fbf6e4;
+            font-size: 18px;
+            border: none;
+            margin-top: 42px;
+        }
+        
+        button[type="submit"]:hover {
+            background: #452bafa8;
+            border: 2px solid #fff;
+            transition: all 0.5s ease;
+        }
+        
+        .link .forgot_pass,
+        .link .create {
+            font-size: 13px;
+            color: #b9b9cc;
+            text-decoration: none;
+            position: relative;
+        }
+        
+        .forgot_pass {
+            margin-right: 30px;
+        }
+        
+        .link .forgot_pass::before,
+        .link .create::before {
+            content: '';
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            background: transparent;
+            position: absolute;
+            left: 0;
+            top: 20px;
+        }
+        
+        .link .forgot_pass:hover::before,
+        .link .create:hover::before {
+            background-color: #b9b9cc;
+            transition: all 1s ease;
+        }
+        
+        .jq-checkbox {
+            vertical-align: -4px;
+            width: 16px;
+            height: 16px;
+            margin: 0 4px 0 0;
+            border: none;
+            background: #23ae92;
+            box-shadow: none;
+            cursor: pointer;
+        }
+        
+        .check {
+            font-size: 13px;
+            margin-left: 11px;
+        }
+        
+        .jq-checkbox.focused {
+            border: 1px solid #08C;
+        }
+        
+        .jq-checkbox.disabled {
+            opacity: .55;
+        }
+        
+        .jq-checkbox {
+            border-radius: none;
+        }
+        
+        .jq-checkbox.checked .jq-checkbox__div {
+            width: 8px;
+            height: 4px;
+            margin: 3px 0 0 3px;
+            border-bottom: 2px solid #fff;
+            border-left: 2px solid #fff;
+            -webkit-transform: rotate(-50deg);
+            transform: rotate(-50deg);
+        }

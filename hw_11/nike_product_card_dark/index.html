@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nike</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="first-block">
+            <div class="first-block__logo">
+                <img src="images/logo.png" alt="">
+            </div>
+
+            <div class="first-block__pic">
+                <img src="images/shoes.png" alt="">
+            </div>
+
+            <div class="radio_btn">
+                <div class="radio_btn_slide radio_btn_slide--navy">
+                    <input type="radio" name="rb" id="rb1" checked><label for="rb1"></label>
+                </div>
+
+                <div class="radio_btn_slide radio_btn_slide--white">
+                    <input type="radio" name="rb" id="rb2"> <label for="rb2"></label>
+                </div>
+
+                <div class="radio_btn_slide radio_btn_slide--red">
+                    <input type="radio" name="rb" id="rb3"> <label for="rb3"></label>
+                </div>
+
+                <div class="radio_btn_slide radio_btn_slide--blue">
+                    <input type="radio" name="rb" id="rb4"> <label for="rb4"></label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="second-block">
+            <div class="second-block__title">
+                Nike SB Stefan Janoski Max
+            </div>
+
+            <div class="second-block__subtitle">
+                Unisex Skateboarding Shoe
+            </div>
+
+            <div id="reviewStars-input">
+                <input id="rate5" type="radio" name="star" />
+                <label title="gorgeous" for="rate5"></label>
+
+                <input id="rate4" type="radio" name="star" />
+                <label title="good" for="rate4"></label>
+
+                <input id="rate3" type="radio" name="star" />
+                <label title="regular" for="rate3"></label>
+
+                <input id="rate2" type="radio" name="star" />
+                <label title="poor" for="rate2"></label>
+
+                <input id="rate1" type="radio" name="star" />
+                <label title="bad" for="rate1"></label>
+            </div>
+
+            <div class="clearfix">
+
+            </div>
+
+            <div class="second-block__select">
+                <div class="select__select-size">
+                    <select class="select-size__size" name="size" id="size">
+                    <option disabled selected>Size</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                </select>
+                </div>
+                <div class="select__select-qty">
+                    <select class="select-qty__qty" name="qty" id="qty">
+                    <option disabled selected>Qty</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                </div>
+            </div>
+            <button type="submit">Add to cart</button>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

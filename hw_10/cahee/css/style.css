@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Raleway-Bold";
+    src: url("../font/Raleway-Bold.woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Raleway-Light";
+    src: url("../font/Raleway-Light.woff2");
+}
+
+body {
+    background-color: #b07cf7;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+    width: 90%;
+    background-color: #b07cf7;
+}
+
+.title {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    color: #fff;
+    font-family: "Raleway-Bold";
+    font-size: 90px;
+    margin-bottom: 30px;
+}
+
+.title p {
+    font-size: 17px;
+    color: #fff;
+    font-family: "Raleway-Light";
+    letter-spacing: 1.5px;
+    line-height: 20px;
+    margin-bottom: 47px;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+.flex-container {
+    display: flex;
+    width: 1170px;
+    height: 330px;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.image {
+    width: 370px;
+    height: 320px;
+    position: relative;
+    box-shadow: 0 0 8px rgb(0, 0, 0, .5);
+    
+    background: linear-gradient();
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+
+.image img {
+    width: 370px;
+    height: 320px;
+}
+
+.date {
+    background-color: rgb(0, 0, 0, .5);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    text-align: center;
+    border-radius: 4px;
+    vertical-align: middle;
+    font-family: "Raleway-Bold";
+    color: #fff;
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+.date span {
+    font-family: "Raleway-Bold";
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.item .article {
+    position: absolute;
+    bottom: 57px;
+    color: #fff;
+    font-family: "Raleway-Bold";
+    font-size: 18px;
+    left: 20px;
+    right: 43px;
+}
+
+.item .post {
+    position: absolute;
+    bottom: 23px;
+    font-family: "Raleway-Light";
+    left: 20px;
+    color: #fff;
+    font-size: 10px;
+}
+
+.btn a {
+    position: static;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Raleway-Light";
+    display: inline-block;
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 485px;
+    height: 57px;
+    background-color: #f72b3b;
+    border: 2px solid #f72b3b;
+    font-size: 20px;
+    text-align: center;
+    line-height: 57px;
+    text-transform: uppercase;
+}
+
+.btn a:hover {
+    color: #f72b3b;
+    background-color: #fff;
+    
+}

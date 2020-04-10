@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1170px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.title {
+    width: 1170px;
+    margin-top: 106px;
+    margin-bottom: 60px;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #3c3c3c;
+    position: relative;
+}
+
+.title p {
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #3c3c3c;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 40px;
+    margin-bottom: 58px;
+}
+
+h1::after {
+    content: " ";
+    display: block;
+    width: 46px;
+    position: absolute;
+    border-bottom: 2px solid #dddbdb;
+    top: 50px;
+    margin-left: 565px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+}
+
+.image {
+    perspective: 1000px;
+   
+}
+
+.flip {
+    position: relative;
+    width: 267px;
+    height: 267px;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    margin-bottom: 20px;
+}
+.image:hover .flip {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    width: 267px;
+    height: 267px;
+    backface-visibility: hidden;
+}
+.back {
+    width: 267px;
+    height: 267px;
+    background-color: #18b5dc;
+    transform: rotateY(180deg);
+    position: relative;
+}
+
+ul{
+    list-style-type: none;
+    position: absolute;
+}
+
+li{
+    display: inline-block;
+    position: absolute;
+}
+li:first-child>a {
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 113px;
+    left:66px;
+    width: 42px;
+    height: 42px;
+    background-color: rgb(94,203,231,.3);
+}
+
+li:nth-child(2)>a {
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 113px;
+    left:112px;
+    width: 42px;
+    height: 42px;
+    background-color: rgb(94,203,231,.3);
+}
+
+li:last-child>a{
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 113px;
+    left:158px;
+    width: 42px;
+    height: 42px;
+    background-color: rgb(94,203,231,.5);
+}
+
+ a>img {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: 0px;
+    left:0px;
+}
+
+
+.name {
+    font-weight: bold;
+    font-size: 15px;
+    color: #282528;
+}
+
+.post {
+    font-size: 10px;
+    color: #a8a8a8;
+}
+
