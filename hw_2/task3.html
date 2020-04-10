@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 3</title>
+   
+
+    <style>
+        span {
+    color: red;
+}
+
+    
+td {
+    margin: 7px;
+    padding: 3px;
+}
+
+    </style>
+</head>
+
+<body>
+    <form action=" " method="POST" id="my_form"
+        onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+        <fieldset>
+            <legend>Общие данные</legend>
+            <table>
+
+                <tr>
+                    <p>
+                        <td>
+                            <label for="distex">Заблокированное поле</label>
+                        </td>
+                    </p>
+
+                    <p>
+                        <td>
+                            <input type="text" name="distex" id="distex" value="Меня нельзя менять" disabled>
+                        </td>
+                    </p>
+                </tr>
+
+                <tr>
+                    <p>
+                        <td><label for="readtex">Какой-то текст</label></td>
+                    </p>
+                    <p>
+                        <td><input type="text" name="readtex" id="readtex" value="Меня только читать" readonly></td>
+                    </p>
+                </tr>
+
+                <tr>
+                    <p>
+                        <td><label for="pet">Имя питомца<span>*</span></label></td>
+                    </p>
+
+                    <p>
+                        <td><input type="text" name="pet" id="pet" placeholder="кот Бегемот" required></td>
+                    </p>
+                </tr>
+                <tr>
+                    <p>
+                        <td><label for="email">Ваш email</label></td>
+                    </p>
+                    <p>
+                        <td><input type="email" name="email" id="email" placeholder="nurasatre8@gmail.com"></td>
+                    </p>
+                </tr>
+                <tr>
+                    <p>
+                        <td><label for="pass">Секретный пароль</label> </td>
+                    </p>
+                    <p>
+                        <td><input type="password" name="pass" id="pass"> </td>
+                    </p>
+                </tr>
+                <tr>
+                    <p>
+                        <td><label for="date">Дата рождения Стивена Кинга</label></td>
+                    </p>
+
+                    <p>
+                        <td><input type="date" name="date" id="date"></td>
+                    </p>
+                </tr>
+                <tr>
+                    <p>
+                        <td><label for="tree">Возраст дерева возле дома</label></td>
+                    </p>
+                    <p>
+                        <td><input type="number" name="tree" id="tree"></td>
+                    </p>
+                </tr>
+                <tr>
+                    <p>
+                        <td><label>Ваш пол</label></td>
+                    </p>
+
+                    <p>
+                        <td><input type="radio" name="pol" id="parket" value="паркет"> <label for="parket">
+                                Паркет</label>
+                            <input type="radio" name="pol" id="laminat" value="ламинат"> <label for="laminat">
+                                Ламинат</label>
+                            <input type="radio" name="pol" id="kovrolin" value="ковролин"><label for="kovrolin">
+                                Ковролин</label></td>
+                    </p>
+                </tr>
+                <tr>
+                    <p>
+                        <td><label for=" ">Социальные сети</label></td>
+                    </p>
+                    <p>
+                        <td><input type="checkbox" name="instagramm" id="inst">
+                            <label for="inst">Instagramm</label>
+
+                            <input type="checkbox" name="twitter" id="twi">
+                            <label for="twi">Twitter</label>
+
+                            <input type="checkbox" name="vkontakte" id="vk">
+                            <label for="vk">Vkontakte</label>
+
+                            <input type="checkbox" name="linkedin" id="link">
+                            <label for="link">LinkedIn</label>
+
+                            <input type="checkbox" name="tumbler" id="tum">
+                            <label for="tum">Tumbler</label>
+
+                            <input type="checkbox" name="facebook" id="fb">
+                            <label for="fb">Facebook</label>
+                        </td>
+                    </p>
+                </tr>
+            </table>
+
+        </fieldset>
+        <fieldset>
+            <legend>Другая информация</legend>
+            <table>
+                <tr>
+                    <p>
+                        <td><label for="">Любимый цвет соседа</label></td>
+                    </p>
+                    <p>
+                        <td><input type="color" name="color" id="color"></td>
+                    </p>
+                </tr>
+                <tr>
+                    <p>
+                        <td><label for="tel">Телефон поддержки front-end разработчиков</label></td>
+                    </p>
+                    <p>
+                        <td><input type="tel" name="tel" id="tel"></td>
+                    </p>
+                </tr>
+                <tr>
+                    <p>
+                        <td><label for="time">Время следующего занятия</label></td>
+                    </p>
+                    <p>
+                        <td><input type="time" name="time" id="time"></td>
+                    </p>
+                </tr>
+                <tr>
+                    <p>
+                        <td><label for="site">Ссылка на любимый сайт</label></td>
+                    </p>
+                    <p>
+                        <td><input type="url" name="site" id="site" placeholder="https://google.com"></td>
+                    </p>
+                </tr>
+                <tr>
+                    <p>
+                        <td><label for="ran">Число от 1 до 10</label></td>
+                    </p>
+                    <p>
+                        <td><input type="range" name="ran" id="ran" min="1" max="10"></td>
+                    </p>
+                </tr>
+                <tr>
+                    <p>
+                        <td><label for="pic">Поделись картинкой</label></td>
+                    </p>
+                    <p>
+                        <td><input type="file" name="pic" id="pic">
+                        </td>
+                    </p>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Не input-ы</legend>
+            <table>
+                <tr>
+                    <p>
+                        <td><label for="">Любимый напиток</label></td>
+                    </p>
+                    <p>
+                        <td><select name="drink" id="drink">
+                                <option value="choose" disabled selected>Выберите напиток</option>
+                                <optgroup label="Безалкогольные">
+                                    <option value="tea">чай</option>
+                                    <option value="coffee">кофе</option>
+                                    <option value="compote">компот</option>
+                                    <option value="juice">сок</option>
+                                </optgroup>
+                                <optgroup label="Бухлишко">
+                                    <option value="beer">пиво</option>
+                                    <option value="wine">вино</option>
+                                    <option value="rum">ром</option>
+                                    <option value="cognac">коньяк</option>
+                                    <option value="tequila">текила</option>
+                                </optgroup>
+                            </select></td>
+                    </p>
+                </tr>
+                <tr>
+                    <p>
+                        <td><label for="">Любимые напитки</label></td>
+                    </p>
+                    <p>
+                        <td><select name="drink1" id="drink1" multiple size="6">
+                                <optgroup label="Безалкогольные">
+                                    <option value="tea">чай</option>
+                                    <option value="coffee">кофе</option>
+                                    <option value="compote">компот</option>
+                                    <option value="juice">сок</option>
+                                </optgroup>
+                                <optgroup label="Бухлишко">
+                                    <option value="beer">пиво</option>
+                                    <option value="wine">вино</option>
+                                    <option value="rum">ром</option>
+                                    <option value="cognac">коньяк</option>
+                                    <option value="tequila">текила</option>
+                                </optgroup>
+                            </select></td>
+                    </p>
+                </tr>
+                <tr>
+                    <p>
+                        <td><label for="comment">Комментарий на свободную тему</label></td>
+                    </p>
+                    <p>
+                        <td><textarea name="comment" id="comment" cols="50" rows="6"
+                                placeholder="В эту область помещается 50 символов в строке и 6 строк текста"></textarea>
+                        </td>
+                    </p>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Кнопочки</legend>
+            <input type="submit" name="sub" id="sub" value="Отправить">
+            <input type="reset" name="res" id="res" value="Сбросить">
+            <button>Просто кнопка</button>
+            <button disabled="disabled">Я заблокирована((</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
